@@ -1,14 +1,12 @@
-#!/bin/bash
-
 #to remove first space from any line
 # -e stands for editing the file, if you just want to see the ouput without editing the orignal file remove the 'e' 
-sed -e 's/^[ \s]*//'
+sed -e 's/^[ \s]*//' <filename>
 
 #to remove blank space from a whole file without editing the orignal one
 #this will give the output on the screen without altering the orignal file
-sed 's/ //g'
+sed 's/ //g' <filename>
 
 #to add multiple sed commands in one line
-sed 's/ //g;s/\]//g;s/\[//g'
+sed 's/ //g;s/\]//g;s/\[//g' <filename>
 
 
