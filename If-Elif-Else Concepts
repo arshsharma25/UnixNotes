@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#to use wiht single square brackets you require to use commas when using a variable for comparison
+declare VAR="Hell"
+if [ $VAR == "Hello" ]; then
+	echo "True"
+else
+	echo "False"
+fi
+
+
+#to work without thinking about commas and having no issue with variable's type
+declare STR1="Hello"
+if [[ $VAR == $STR1 ]]; then
+	echo "True"
+else
+	echo "False"
+fi
+
+
+#general if-elif-else loop
+declare STR2="Heaven"
+if [[ $VAR == $STR1 ]]; then
+	echo "True"
+elif [[ $VAR == $STR2 ]]; then
+	echo "Something else"
+else 
+	echo "False"
+fi
