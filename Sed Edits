@@ -9,4 +9,6 @@ sed 's/ //g' <filename>
 #to add multiple sed commands in one line
 sed 's/ //g;s/\]//g;s/\[//g' <filename>
 
+# working on more 
+
 
